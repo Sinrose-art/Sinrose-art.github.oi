@@ -1,0 +1,86 @@
+<HTML>
+    <HEAD>
+    <TITLE>Меню</title>
+        <STYLE>
+        .p1 {
+            word-spacing: 0px;
+        }
+        html {
+            height: 100%
+        }
+                body {
+                    height: 100%;
+                    background-image: url(../img/Меню.png);
+                }
+                img {
+                    position: fixed;
+                }
+                a {
+                    text-decoration: none;
+                    outline: none;
+                    display: inline-block;
+                    padding: 20px 30px;
+                    margin: 10px 20px;
+                    position: relative;
+                    color: rgb(10, 0, 143);
+                    border: 1px solid rgba(6, 4, 138, 0.4);
+                    background: none;
+                    font-weight: 300;
+                    font-family: 'Montserrat', sans-serif;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    top: 1px;
+                }
+                a:before,
+                a:after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    opacity: 0;
+                    box-sizing: border-box;
+                }
+                a:before {
+                    bottom: 0;
+                    left: 0;
+                    border-left: 1px solid rgb(0, 217, 255);
+                    border-top: 1px solid rgb(0, 72, 228);
+                    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+                }
+                a:after {
+                    top: 0;
+                    right: 0;
+                    border-right: 1px solid rgb(144, 0, 211);
+                    border-bottom: 1px solid rgb(228, 0, 152);
+                    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+                }
+                a:hover:before,
+                a:hover:after{
+                    height: 100%;
+                    width: 100%;
+                    opacity: 1;
+                }
+                a:hover:before {
+                    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+                }
+                a:hover:after {
+                    transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;
+                }
+                a:hover {
+                    background: rgba(0, 60, 255, 0.2);
+                }
+                img {
+                    position: absolute;
+                }
+        </STYLE>
+    </HEAD>
+    <BODY class="gh" TEXT = WHITE>
+        <img url="../img/kisspng-intel-core-dell-intel-parallel-studio-intel-hd-uh-intel-quickpath-interconnect-5b22639c80e6a0.476042681528980380528.jpg">
+        <P class="p1">
+        <A HREF="Главная.html" target="info"> <B>Главная</B></A>
+        <A HREF="События.html" target="info"> <B>События</B></A>
+        <A HREF="Творцы.html" target="info"> <B>Творцы</B></A>
+        <A HREF="Техника.html" target="info"> <B>Техника</B></A> 
+        </P>
+        </BODY>
+        </HTML>
